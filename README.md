@@ -65,6 +65,7 @@ Pipeline endpoint is shown, with status ACTIV:
  show schedule Runs in MLstudio.
  ![image](https://user-images.githubusercontent.com/35376272/125336898-30ea4a80-e303-11eb-8caf-625a88d82e90.png)
 ![image](https://user-images.githubusercontent.com/35376272/125336977-46f80b00-e303-11eb-941d-9533b0912af1.png)
+Unfortunatly, my lab space timeout before I save the aml-pipelines-with-automated-machine-learning-step.ipynb run result and the changes I made to the code, but how it looks like at the end is shown in the screenshots above and the Youtube video below.
 
 
 ## Screen Recording
