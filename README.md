@@ -54,6 +54,17 @@ maybe anyone can give me a hint here.
 Step 7: Create, Publish and Consume a Pipeline
 I uploaded the aml-pipelines-with-automated-machine-learning-step Jupyter Notebook to Azure mlStudio, then all the parameters are updated accordingly.
 ![image](https://user-images.githubusercontent.com/35376272/125335291-3f376700-e301-11eb-9630-03fe33a3341e.png)
+The pipeline has been created.
+![image](https://user-images.githubusercontent.com/35376272/125335551-89204d00-e301-11eb-962c-a3af96932c6d.png)
+Pipeline endpoint is shown, with status ACTIV:
+ ![image](https://user-images.githubusercontent.com/35376272/125336248-65a9d200-e302-11eb-9e37-66e79457c32b.png)
+ 
+ n Jupyter Notebook,clicking "RunDetail Widget" to show the step runs.
+ ![image](https://user-images.githubusercontent.com/35376272/125336431-9b4ebb00-e302-11eb-8517-98332405ad6d.png)
+ 
+ show schedule Runs in MLstudio.
+ ![image](https://user-images.githubusercontent.com/35376272/125336898-30ea4a80-e303-11eb-8caf-625a88d82e90.png)
+![image](https://user-images.githubusercontent.com/35376272/125336977-46f80b00-e303-11eb-941d-9533b0912af1.png)
 
 
 ## Screen Recording
