@@ -68,8 +68,11 @@ Pipeline endpoint is shown, with status ACTIV:
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+https://youtu.be/PJAPX28h5n4
+please let me know if the link is not working
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+I find it is more convienent to configure enable Application Insights at deploy time with a check-box insetad of run a script.
+The expiration of the lab space make me feel inconvenient, the step 1-6 was done in one session and step 7 is in another session, I have to repeate step 1-6 again. Please excuse me if the ID/ model name from  step 1-6 do not match 7.
+
 
