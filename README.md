@@ -30,6 +30,21 @@ And the information of the best model can be found. It is votingEnsemble with ac
 Step 3: Deploy the Best Model. Select the run of the best model, (which is Run 106 here) deploy the model and select the "enable authentication". Make sure that deploy the model using ACI. All of these selections are done in the configuration panel.
 ![Capture_deployenableauthentication](https://user-images.githubusercontent.com/35376272/125313103-c4af1d00-e2e9-11eb-8751-22867f206aae.PNG)
 
+Step 4: Enable Application Insights
+Now that the Best Model is deployed, enable Application Insights and retrieve logs. Although I found it is very convienent to configure it at deploy time with a check-box, but we are requested to run code that will enable it as part of the project. I run the log.py and enable application insigts by code "service.update(enable_app_insights=True)".
+I found that the deplyment is not very stable , since the status kept changing from "healthy" to "transitioning" after I run the log.py. Not sure the reason behind it.
+
+![Capture_loginfo](https://user-images.githubusercontent.com/35376272/125315167-b104b600-e2eb-11eb-8ee0-a4d3a8d28aec.PNG)
+
+![Capture_applicationinsight](https://user-images.githubusercontent.com/35376272/125315124-a8ac7b00-e2eb-11eb-891c-756327c4992d.PNG)
+
+Step 5: Swagger Documentation
+In this step, I will consume the deployed model using Swagger. First I need to download the a Swagger JSON file for deployed models provided by Azure. And make sure  the file is located in the same folder as serve.py and swagger.sh. I have ran into "It works" empty webpage problem, it turns out I need to change the port number to 9000 in swagger.sh.
+![Capture_swaggermymodel](https://user-images.githubusercontent.com/35376272/125317838-27a2b300-e2ee-11eb-9a51-20bcad6b428d.PNG)
+![Capture_swaggerrun](https://user-images.githubusercontent.com/35376272/125317856-2bced080-e2ee-11eb-8b31-348dd6d6b024.PNG)
+![Capture_post](https://user-images.githubusercontent.com/35376272/125317862-2d989400-e2ee-11eb-954b-9e01af1e9390.PNG)
+![Capture_swaggerget](https://user-images.githubusercontent.com/35376272/125317875-2ffaee00-e2ee-11eb-938a-1f847aa385e6.PNG)
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
