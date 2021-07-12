@@ -39,11 +39,21 @@ I found that the deplyment is not very stable , since the status kept changing f
 ![Capture_applicationinsight](https://user-images.githubusercontent.com/35376272/125315124-a8ac7b00-e2eb-11eb-891c-756327c4992d.PNG)
 
 Step 5: Swagger Documentation
-In this step, I will consume the deployed model using Swagger. First I need to download the a Swagger JSON file for deployed models provided by Azure. And make sure  the file is located in the same folder as serve.py and swagger.sh. I have ran into "It works" empty webpage problem, it turns out I need to change the port number to 9000 in swagger.sh.
+In this step, I will consume the deployed model using Swagger. First I need to download the a Swagger JSON file for deployed models provided by Azure. And make sure  the file is located in the same folder as serve.py and swagger.sh. I have ran into "It works" empty webpage problem, it turns out I need to change the port number to 9000 in swagger.sh. It very important to do so docker run -p 9000:8080 swaggerapi/swagger-ui
 ![Capture_swaggermymodel](https://user-images.githubusercontent.com/35376272/125317838-27a2b300-e2ee-11eb-9a51-20bcad6b428d.PNG)
 ![Capture_swaggerrun](https://user-images.githubusercontent.com/35376272/125317856-2bced080-e2ee-11eb-8b31-348dd6d6b024.PNG)
 ![Capture_post](https://user-images.githubusercontent.com/35376272/125317862-2d989400-e2ee-11eb-954b-9e01af1e9390.PNG)
 ![Capture_swaggerget](https://user-images.githubusercontent.com/35376272/125317875-2ffaee00-e2ee-11eb-938a-1f847aa385e6.PNG)
+
+Step 6: Consume Model Endpoints
+Once the model is deployed, I run the endpoint.py script provided to interact with the trained model.I need to modify both the scoring_uri and the key in the script.
+I have some issue here: I kept having 502 error
+![image](https://user-images.githubusercontent.com/35376272/125324778-13ae7f80-e2f5-11eb-97b6-663e1502d5e5.png)
+maybe anyone can give me a hint here.
+
+Step 7: Create, Publish and Consume a Pipeline
+I uploaded the aml-pipelines-with-automated-machine-learning-step Jupyter Notebook to Azure mlStudio, then all the parameters are updated accordingly.
+![image](https://user-images.githubusercontent.com/35376272/125335291-3f376700-e301-11eb-9630-03fe33a3341e.png)
 
 
 ## Screen Recording
