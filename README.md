@@ -73,6 +73,7 @@ please let me know if the link is not working
 
 ## Standout Suggestions
 I find it is more convienent to configure enable Application Insights at deploy time with a check-box insetad of run a script.
+One possible future improvement can be enable deep learning for classification task and training using more data and longer time.
 The expiration of the lab space make me feel inconvenient, the step 1-6 was done in one session and step 7 is in another session, I have to repeate step 1-6 again. Please excuse me if the ID/ model name from  step 1-6 do not match 7.
 
 
